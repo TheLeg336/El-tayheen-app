@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compass App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" class="centered-logo">
+
+    <!-- Permission Request Status -->
+    <p id="permission-status" class="error-message"></p>
+
+    <!-- Compass Module -->
+    <div class="compass-module">
+      <div class="compass-base">
+        <div class="compass-markers">
+          <div class="north">N</div>
+          <div class="south">S</div>
+          <div class="east">E</div>
+          <div class="west">W</div>
+        </div>
+        <div class="compass-needle" id="compass-needle"></div>
+      </div>
+    </div>
+
+    <!-- Latitude and Longitude Inputs -->
+    <input type="text" id="latitude" placeholder="Latitude" />
+    <input type="text" id="longitude" placeholder="Longitude" />
+
+    <!-- Buttons -->
+    <button id="get-coordinates">Get Coordinates</button>
+    <button id="start-compass" disabled>Start Compass</button>
+
+    <!-- Arrival Message -->
+    <p id="arrival-message" class="arrival-message">You have arrived!</p>
+
+    <!-- Status/Error Message -->
+    <p id="status" class="error-message"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
